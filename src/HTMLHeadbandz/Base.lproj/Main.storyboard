@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bOL-n6-Mgx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="HTMLHeadbandz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U98-ht-9n9">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKG-3u-jq5">
+                                <rect key="frame" x="461" y="25" width="114" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="New Card">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getRandomCard" destination="BYZ-38-t0r" eventType="touchUpInside" id="nT4-JA-Cth"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="U98-ht-9n9" secondAttribute="bottom" id="6ed-Fa-tbW"/>
+                            <constraint firstItem="DKG-3u-jq5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="25" id="Iip-of-Tbe"/>
+                            <constraint firstAttribute="trailing" secondItem="U98-ht-9n9" secondAttribute="trailing" id="XiE-qP-TEu"/>
+                            <constraint firstItem="U98-ht-9n9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YbH-uq-9i4"/>
+                            <constraint firstItem="U98-ht-9n9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oct-6y-2Ts"/>
+                            <constraint firstAttribute="trailing" secondItem="DKG-3u-jq5" secondAttribute="trailing" constant="25" id="vcI-u8-kLo"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="4VW-H0-jfb"/>
+                    <connections>
+                        <outlet property="webView" destination="U98-ht-9n9" id="ZRB-S3-3j4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910" y="-289"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="m6t-KB-qQI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="bOL-n6-Mgx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ifS-Ov-KBX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sEf-hE-dDl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H8h-Rg-fH5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221" y="-289"/>
+        </scene>
+    </scenes>
+</document>
