@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bOL-n6-Mgx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bOL-n6-Mgx">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -20,26 +20,68 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <dataDetectorType key="dataDetectorTypes"/>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKG-3u-jq5">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlU-Hx-bfu">
+                                <rect key="frame" x="461" y="25" width="114" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="New Card">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getRandomCard" destination="BYZ-38-t0r" eventType="touchUpInside" id="egi-fB-Yyq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjU-vO-N0u">
                                 <rect key="frame" x="461" y="25" width="114" height="42"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <state key="normal" title="New Card">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getRandomCard" destination="BYZ-38-t0r" eventType="touchUpInside" id="nT4-JA-Cth"/>
+                                    <action selector="getRandomCard" destination="BYZ-38-t0r" eventType="touchUpInside" id="oGv-ZX-8se"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mjU-vO-N0u" secondAttribute="trailing" constant="25" id="4AS-PT-E5K"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="U98-ht-9n9" secondAttribute="bottom" id="6ed-Fa-tbW"/>
-                            <constraint firstItem="DKG-3u-jq5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="25" id="Iip-of-Tbe"/>
+                            <constraint firstItem="mjU-vO-N0u" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="25" id="KdG-8e-7xZ"/>
                             <constraint firstAttribute="trailing" secondItem="U98-ht-9n9" secondAttribute="trailing" id="XiE-qP-TEu"/>
                             <constraint firstItem="U98-ht-9n9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YbH-uq-9i4"/>
+                            <constraint firstAttribute="trailing" secondItem="zlU-Hx-bfu" secondAttribute="trailing" constant="25" id="fux-4z-hFh"/>
                             <constraint firstItem="U98-ht-9n9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oct-6y-2Ts"/>
-                            <constraint firstAttribute="trailing" secondItem="DKG-3u-jq5" secondAttribute="trailing" constant="25" id="vcI-u8-kLo"/>
+                            <constraint firstItem="zlU-Hx-bfu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="25" id="xqF-Lf-o5G"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="zlU-Hx-bfu"/>
+                                <exclude reference="mjU-vO-N0u"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="4AS-PT-E5K"/>
+                                <exclude reference="KdG-8e-7xZ"/>
+                                <exclude reference="fux-4z-hFh"/>
+                                <exclude reference="xqF-Lf-o5G"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="zlU-Hx-bfu"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="fux-4z-hFh"/>
+                                <include reference="xqF-Lf-o5G"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="mjU-vO-N0u"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="4AS-PT-E5K"/>
+                                <include reference="KdG-8e-7xZ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="4VW-H0-jfb"/>
