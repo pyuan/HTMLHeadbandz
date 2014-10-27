@@ -15,4 +15,6 @@ class Constants
     
     class func CARDS_EXTENSION() -> String { return "html" }
     
+    class func NEW_CARD_DELAY_IN_SECONDS() -> Int { return 5 }
+    
 }

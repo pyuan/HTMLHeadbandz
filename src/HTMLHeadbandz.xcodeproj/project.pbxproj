@@ -28,6 +28,8 @@
 		1BCD5CC219F609210023E87C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCD5CC119F609210023E87C /* MainViewController.swift */; };
 		1BF4F67019FEB1E5004779FA /* NewCardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4F66F19FEB1E5004779FA /* NewCardButton.swift */; };
 		1BF4F67419FEBA4E004779FA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF4F67119FEBA25004779FA /* QuartzCore.framework */; };
+		1BF4F67719FED134004779FA /* TimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4F67619FED134004779FA /* TimeUtils.swift */; };
+		1BF4F67919FEE04E004779FA /* CountDownLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4F67819FEE04E004779FA /* CountDownLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		1BCD5CC119F609210023E87C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
 		1BF4F66F19FEB1E5004779FA /* NewCardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCardButton.swift; sourceTree = "<group>"; };
 		1BF4F67119FEBA25004779FA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1BF4F67619FED134004779FA /* TimeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeUtils.swift; sourceTree = "<group>"; };
+		1BF4F67819FEE04E004779FA /* CountDownLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDownLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,7 @@
 				1BF4F66B19FEB182004779FA /* modules */,
 				1BCD5C9819F604E50023E87C /* Supporting Files */,
 				1BF4F66E19FEB1D0004779FA /* ui */,
+				1BF4F67519FED12B004779FA /* utils */,
 			);
 			path = HTMLHeadbandz;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				1BF4F66F19FEB1E5004779FA /* NewCardButton.swift */,
+				1BF4F67819FEE04E004779FA /* CountDownLabel.swift */,
 			);
 			name = ui;
 			sourceTree = "<group>";
@@ -222,6 +228,14 @@
 			);
 			name = libs;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		1BF4F67519FED12B004779FA /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				1BF4F67619FED134004779FA /* TimeUtils.swift */,
+			);
+			name = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,8 +352,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BCD5C9B19F604E50023E87C /* AppDelegate.swift in Sources */,
+				1BF4F67719FED134004779FA /* TimeUtils.swift in Sources */,
 				1BCD5CC019F6080D0023E87C /* Constants.swift in Sources */,
 				1BF4F67019FEB1E5004779FA /* NewCardButton.swift in Sources */,
+				1BF4F67919FEE04E004779FA /* CountDownLabel.swift in Sources */,
 				1BCD5CC219F609210023E87C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

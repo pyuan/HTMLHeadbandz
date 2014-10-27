@@ -41,7 +41,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="mjU-vO-N0u" secondAttribute="trailing" id="4AS-PT-E5K"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="U98-ht-9n9" secondAttribute="bottom" id="6ed-Fa-tbW"/>
@@ -87,6 +86,8 @@
                     <navigationItem key="navigationItem" id="4VW-H0-jfb"/>
                     <connections>
                         <outlet property="webView" destination="U98-ht-9n9" id="ZRB-S3-3j4"/>
+                        <outletCollection property="newCardButtons" destination="zlU-Hx-bfu" collectionClass="NSMutableArray" id="v9A-oo-tta"/>
+                        <outletCollection property="newCardButtons" destination="mjU-vO-N0u" collectionClass="NSMutableArray" id="4VV-Lw-gwB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
