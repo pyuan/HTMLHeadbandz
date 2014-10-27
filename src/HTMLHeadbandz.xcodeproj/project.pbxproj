@@ -26,6 +26,8 @@
 		1BCD5CBE19F607BB0023E87C /* paul.html in Resources */ = {isa = PBXBuildFile; fileRef = 1BCD5CBC19F607BB0023E87C /* paul.html */; };
 		1BCD5CC019F6080D0023E87C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCD5CBF19F6080D0023E87C /* Constants.swift */; };
 		1BCD5CC219F609210023E87C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCD5CC119F609210023E87C /* MainViewController.swift */; };
+		1BF4F67019FEB1E5004779FA /* NewCardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4F66F19FEB1E5004779FA /* NewCardButton.swift */; };
+		1BF4F67419FEBA4E004779FA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF4F67119FEBA25004779FA /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +63,9 @@
 		1BCD5CBB19F607BB0023E87C /* mike.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = mike.html; path = cards/mike.html; sourceTree = "<group>"; };
 		1BCD5CBC19F607BB0023E87C /* paul.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = paul.html; path = cards/paul.html; sourceTree = "<group>"; };
 		1BCD5CBF19F6080D0023E87C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		1BCD5CC119F609210023E87C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1BCD5CC119F609210023E87C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
+		1BF4F66F19FEB1E5004779FA /* NewCardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCardButton.swift; sourceTree = "<group>"; };
+		1BF4F67119FEBA25004779FA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BF4F67419FEBA4E004779FA /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,13 +135,13 @@
 			children = (
 				1BCD5C9A19F604E50023E87C /* AppDelegate.swift */,
 				1BCD5CBA19F604F10023E87C /* cards */,
-				1BCD5CBF19F6080D0023E87C /* Constants.swift */,
+				1BF4F66D19FEB1AF004779FA /* constants */,
 				1B3FBADF19F77461007ADED5 /* images */,
 				1BCD5CA119F604E50023E87C /* Images.xcassets */,
-				1BCD5CA319F604E50023E87C /* LaunchScreen.xib */,
-				1BCD5C9E19F604E50023E87C /* Main.storyboard */,
-				1BCD5CC119F609210023E87C /* MainViewController.swift */,
+				1BF4F67319FEBA2C004779FA /* libs */,
+				1BF4F66B19FEB182004779FA /* modules */,
 				1BCD5C9819F604E50023E87C /* Supporting Files */,
+				1BF4F66E19FEB1D0004779FA /* ui */,
 			);
 			path = HTMLHeadbandz;
 			sourceTree = "<group>";
@@ -173,6 +178,50 @@
 				1BCD5CBC19F607BB0023E87C /* paul.html */,
 			);
 			name = cards;
+			sourceTree = "<group>";
+		};
+		1BF4F66B19FEB182004779FA /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				1BF4F66C19FEB18E004779FA /* main */,
+			);
+			name = modules;
+			path = images;
+			sourceTree = "<group>";
+		};
+		1BF4F66C19FEB18E004779FA /* main */ = {
+			isa = PBXGroup;
+			children = (
+				1BCD5CA319F604E50023E87C /* LaunchScreen.xib */,
+				1BCD5C9E19F604E50023E87C /* Main.storyboard */,
+				1BCD5CC119F609210023E87C /* MainViewController.swift */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		1BF4F66D19FEB1AF004779FA /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				1BCD5CBF19F6080D0023E87C /* Constants.swift */,
+			);
+			name = constants;
+			sourceTree = "<group>";
+		};
+		1BF4F66E19FEB1D0004779FA /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				1BF4F66F19FEB1E5004779FA /* NewCardButton.swift */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
+		1BF4F67319FEBA2C004779FA /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				1BF4F67119FEBA25004779FA /* QuartzCore.framework */,
+			);
+			name = libs;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +339,7 @@
 			files = (
 				1BCD5C9B19F604E50023E87C /* AppDelegate.swift in Sources */,
 				1BCD5CC019F6080D0023E87C /* Constants.swift in Sources */,
+				1BF4F67019FEB1E5004779FA /* NewCardButton.swift in Sources */,
 				1BCD5CC219F609210023E87C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +369,7 @@
 				1BCD5C9F19F604E50023E87C /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		1BCD5CA319F604E50023E87C /* LaunchScreen.xib */ = {
@@ -327,6 +378,7 @@
 				1BCD5CA419F604E50023E87C /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
