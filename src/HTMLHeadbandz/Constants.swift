@@ -11,7 +11,7 @@ import Foundation
 class Constants
 {
     
-    class func CARDS() -> [String] { return ["paul", "mike"] }
+    class func CARDS() -> [String] { return ["1", "2", "3", "4", "5", "6", "curry", "jnaiya1", "jnaiya2", "matthew1", "matthew2", "melo", "Rashelle", "Rashelle2", "Yamileth", "Yamileth2"] }
     
     class func CARDS_EXTENSION() -> String { return "html" }
     
