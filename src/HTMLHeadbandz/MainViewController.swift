@@ -36,12 +36,21 @@ class MainViewController:UIViewController
             self._cards = Utils.shuffle(Constants.CARDS())
             println("Loaded cards: " + self._cards.description)
         }
-
-        self._selectedCard = self._cards[0]
-        self._cards.removeAtIndex(0)
-        println("Selected card: " + self._selectedCard)
         
-        self._startCountDown()
+        let newCard:String = self._cards[0]
+        if newCard != self._selectedCard || self._cards.count == 1
+        {
+            self._selectedCard = self._cards[0]
+            self._cards.removeAtIndex(0)
+            println("Selected card: " + self._selectedCard)
+            self._startCountDown()
+        }
+        else
+        {
+            println("Same card as previous card, go to the next card")
+            self._cards.removeAtIndex(0)
+            self.getCard()
+        }
     }
     
     //start the count down
