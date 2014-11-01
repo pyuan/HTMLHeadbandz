@@ -17,4 +17,6 @@ class Constants
     
     class func NEW_CARD_DELAY_IN_SECONDS() -> Int { return 5 }
     
+    class func COUNT_DOWN_INTERVAL_IN_SECONDS() -> Float { return 0.75 }
+    
 }

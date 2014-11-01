@@ -27,7 +27,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getRandomCard" destination="BYZ-38-t0r" eventType="touchUpInside" id="egi-fB-Yyq"/>
+                                    <action selector="getCard" destination="BYZ-38-t0r" eventType="touchUpInside" id="kxH-zb-z3g"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjU-vO-N0u" customClass="NewCardButton" customModule="HTMLHeadbandz" customModuleProvider="target">
@@ -37,7 +37,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="getRandomCard" destination="BYZ-38-t0r" eventType="touchUpInside" id="oGv-ZX-8se"/>
+                                    <action selector="getCard" destination="BYZ-38-t0r" eventType="touchUpInside" id="lC5-uS-ZC6"/>
                                 </connections>
                             </button>
                         </subviews>

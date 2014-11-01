@@ -47,7 +47,8 @@ class CountDownLabel:UILabel
         //show fade and scale animation
         self.transform = CGAffineTransformMakeScale(15, 15)
         self.alpha = 0
-        UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {() -> Void in
+        var duration:NSTimeInterval = Double(Constants.COUNT_DOWN_INTERVAL_IN_SECONDS()) / 2
+        UIView.animateWithDuration(duration, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {() -> Void in
             
             self.transform = CGAffineTransformIdentity
             self.alpha = 1

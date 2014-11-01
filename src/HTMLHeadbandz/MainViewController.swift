@@ -17,6 +17,7 @@ class MainViewController:UIViewController
     @IBOutlet var newCardButtons:Array<UIButton>?
     
     var _selectedCard:String = ""
+    var _cards:[String] = [String]()
     
     var _countDownLabel:CountDownLabel?
     
@@ -28,23 +29,19 @@ class MainViewController:UIViewController
         self.view.sendSubviewToBack(self.webView!)
     }
     
-    //set a random card as selected, has to be different than current card
-    @IBAction func getRandomCard()
+    //set a card as selected
+    @IBAction func getCard()
     {
-        let cards:[String] = Constants.CARDS()
-        var random:Int = Int(arc4random_uniform(UInt32(cards.count)))
-        var newCard:String = cards[random]
+        if self._cards.count == 0 {
+            self._cards = Utils.shuffle(Constants.CARDS())
+            println("Loaded cards: " + self._cards.description)
+        }
+
+        self._selectedCard = self._cards[0]
+        self._cards.removeAtIndex(0)
+        println("Selected card: " + self._selectedCard)
         
-        if newCard != self._selectedCard
-        {
-            self._selectedCard = newCard
-            println("Selected card: " + self._selectedCard)
-            
-            self._startCountDown()
-        }
-        else {
-            self.getRandomCard() //recurse until a different card is selected
-        }
+        self._startCountDown()
     }
     
     //start the count down
@@ -86,7 +83,7 @@ class MainViewController:UIViewController
     func _countDown(currentCount:Int, onCountHandler: (count:Int) -> Void, onCompleteHandler: (count:Int) -> Void)
     {
         var nextCount:Int = currentCount + 1
-        TimeUtils.PerformAfterDelay(1, completionHandler: {() -> Void in
+        TimeUtils.PerformAfterDelay(Constants.COUNT_DOWN_INTERVAL_IN_SECONDS(), completionHandler: {() -> Void in
             
             if nextCount < Constants.NEW_CARD_DELAY_IN_SECONDS()
             {
@@ -138,7 +135,8 @@ class MainViewController:UIViewController
     {
         var webView:UIWebView = self.webView!
         webView.alpha = 0
-        UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.BeginFromCurrentState, animations: {() -> Void in
+        var duration:NSTimeInterval = Double(Constants.COUNT_DOWN_INTERVAL_IN_SECONDS()) / 2
+        UIView.animateWithDuration(duration, delay: 0, options: UIViewAnimationOptions.BeginFromCurrentState, animations: {() -> Void in
             
             webView.alpha = 1
             
@@ -154,7 +152,7 @@ class MainViewController:UIViewController
             
             var frame:CGRect = button.frame
             button.alpha = 0
-            UIView.animateWithDuration(0.15, delay: 0, options: UIViewAnimationOptions.BeginFromCurrentState, animations: {() -> Void in
+            UIView.animateWithDuration(0.15, delay: Double(Constants.COUNT_DOWN_INTERVAL_IN_SECONDS()), options: UIViewAnimationOptions.BeginFromCurrentState, animations: {() -> Void in
                 
                 button.frame = CGRectMake(frame.origin.x-frame.width, frame.origin.y, frame.width, frame.height)
                 button.alpha = 1
