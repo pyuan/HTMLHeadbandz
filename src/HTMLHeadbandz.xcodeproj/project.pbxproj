@@ -24,25 +24,16 @@
 		1B45CB761A05420B00AB133C /* 4.html in Resources */ = {isa = PBXBuildFile; fileRef = 1B45CB5D1A05420B00AB133C /* 4.html */; };
 		1B45CB771A05420B00AB133C /* 5.html in Resources */ = {isa = PBXBuildFile; fileRef = 1B45CB5E1A05420B00AB133C /* 5.html */; };
 		1B45CB781A05420B00AB133C /* 6.html in Resources */ = {isa = PBXBuildFile; fileRef = 1B45CB5F1A05420B00AB133C /* 6.html */; };
-		1B45CB791A05420B00AB133C /* bae.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B45CB601A05420B00AB133C /* bae.png */; };
-		1B45CB7A1A05420B00AB133C /* Beyonce.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B45CB611A05420B00AB133C /* Beyonce.jpg */; };
 		1B45CB7B1A05420B00AB133C /* curry.html in Resources */ = {isa = PBXBuildFile; fileRef = 1B45CB621A05420B00AB133C /* curry.html */; };
-		1B45CB7C1A05420B00AB133C /* ellie.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B45CB631A05420B00AB133C /* ellie.png */; };
 		1B45CB7D1A05420B00AB133C /* jnaiya1.html in Resources */ = {isa = PBXBuildFile; fileRef = 1B45CB641A05420B00AB133C /* jnaiya1.html */; };
 		1B45CB7E1A05420B00AB133C /* jnaiya2.html in Resources */ = {isa = PBXBuildFile; fileRef = 1B45CB651A05420B00AB133C /* jnaiya2.html */; };
 		1B45CB7F1A05420B00AB133C /* matthew1.html in Resources */ = {isa = PBXBuildFile; fileRef = 1B45CB661A05420B00AB133C /* matthew1.html */; };
 		1B45CB801A05420B00AB133C /* matthew2.html in Resources */ = {isa = PBXBuildFile; fileRef = 1B45CB671A05420B00AB133C /* matthew2.html */; };
 		1B45CB811A05420B00AB133C /* melo.html in Resources */ = {isa = PBXBuildFile; fileRef = 1B45CB681A05420B00AB133C /* melo.html */; };
-		1B45CB821A05420B00AB133C /* my awesome fifth grade class!!!!.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B45CB691A05420B00AB133C /* my awesome fifth grade class!!!!.jpg */; };
 		1B45CB831A05420B00AB133C /* Rashelle.html in Resources */ = {isa = PBXBuildFile; fileRef = 1B45CB6A1A05420B00AB133C /* Rashelle.html */; };
-		1B45CB841A05420B00AB133C /* Rashelle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B45CB6B1A05420B00AB133C /* Rashelle.jpg */; };
 		1B45CB851A05420B00AB133C /* Rashelle2.html in Resources */ = {isa = PBXBuildFile; fileRef = 1B45CB6C1A05420B00AB133C /* Rashelle2.html */; };
-		1B45CB861A05420B00AB133C /* Rashelle2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B45CB6D1A05420B00AB133C /* Rashelle2.jpg */; };
 		1B45CB871A05420B00AB133C /* Yamileth.html in Resources */ = {isa = PBXBuildFile; fileRef = 1B45CB6E1A05420B00AB133C /* Yamileth.html */; };
-		1B45CB881A05420B00AB133C /* Yamileth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B45CB6F1A05420B00AB133C /* Yamileth.jpg */; };
 		1B45CB891A05420B00AB133C /* Yamileth2.html in Resources */ = {isa = PBXBuildFile; fileRef = 1B45CB701A05420B00AB133C /* Yamileth2.html */; };
-		1B45CB8A1A05420B00AB133C /* Yamy2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B45CB711A05420B00AB133C /* Yamy2.jpg */; };
-		1B45CB8B1A05420B00AB133C /* Yamy3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B45CB721A05420B00AB133C /* Yamy3.jpg */; };
 		1BCD5C9B19F604E50023E87C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCD5C9A19F604E50023E87C /* AppDelegate.swift */; };
 		1BCD5CA019F604E50023E87C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BCD5C9E19F604E50023E87C /* Main.storyboard */; };
 		1BCD5CA219F604E50023E87C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BCD5CA119F604E50023E87C /* Images.xcassets */; };
@@ -84,25 +75,16 @@
 		1B45CB5D1A05420B00AB133C /* 4.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = 4.html; path = cards/4.html; sourceTree = "<group>"; };
 		1B45CB5E1A05420B00AB133C /* 5.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = 5.html; path = cards/5.html; sourceTree = "<group>"; };
 		1B45CB5F1A05420B00AB133C /* 6.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = 6.html; path = cards/6.html; sourceTree = "<group>"; };
-		1B45CB601A05420B00AB133C /* bae.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bae.png; path = cards/bae.png; sourceTree = "<group>"; };
-		1B45CB611A05420B00AB133C /* Beyonce.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Beyonce.jpg; path = cards/Beyonce.jpg; sourceTree = "<group>"; };
 		1B45CB621A05420B00AB133C /* curry.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = curry.html; path = cards/curry.html; sourceTree = "<group>"; };
-		1B45CB631A05420B00AB133C /* ellie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ellie.png; path = cards/ellie.png; sourceTree = "<group>"; };
 		1B45CB641A05420B00AB133C /* jnaiya1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = jnaiya1.html; path = cards/jnaiya1.html; sourceTree = "<group>"; };
 		1B45CB651A05420B00AB133C /* jnaiya2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = jnaiya2.html; path = cards/jnaiya2.html; sourceTree = "<group>"; };
 		1B45CB661A05420B00AB133C /* matthew1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = matthew1.html; path = cards/matthew1.html; sourceTree = "<group>"; };
 		1B45CB671A05420B00AB133C /* matthew2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = matthew2.html; path = cards/matthew2.html; sourceTree = "<group>"; };
 		1B45CB681A05420B00AB133C /* melo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = melo.html; path = cards/melo.html; sourceTree = "<group>"; };
-		1B45CB691A05420B00AB133C /* my awesome fifth grade class!!!!.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "my awesome fifth grade class!!!!.jpg"; path = "cards/my awesome fifth grade class!!!!.jpg"; sourceTree = "<group>"; };
 		1B45CB6A1A05420B00AB133C /* Rashelle.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = Rashelle.html; path = cards/Rashelle.html; sourceTree = "<group>"; };
-		1B45CB6B1A05420B00AB133C /* Rashelle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Rashelle.jpg; path = cards/Rashelle.jpg; sourceTree = "<group>"; };
 		1B45CB6C1A05420B00AB133C /* Rashelle2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = Rashelle2.html; path = cards/Rashelle2.html; sourceTree = "<group>"; };
-		1B45CB6D1A05420B00AB133C /* Rashelle2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Rashelle2.jpg; path = cards/Rashelle2.jpg; sourceTree = "<group>"; };
 		1B45CB6E1A05420B00AB133C /* Yamileth.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = Yamileth.html; path = cards/Yamileth.html; sourceTree = "<group>"; };
-		1B45CB6F1A05420B00AB133C /* Yamileth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Yamileth.jpg; path = cards/Yamileth.jpg; sourceTree = "<group>"; };
 		1B45CB701A05420B00AB133C /* Yamileth2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = Yamileth2.html; path = cards/Yamileth2.html; sourceTree = "<group>"; };
-		1B45CB711A05420B00AB133C /* Yamy2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Yamy2.jpg; path = cards/Yamy2.jpg; sourceTree = "<group>"; };
-		1B45CB721A05420B00AB133C /* Yamy3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Yamy3.jpg; path = cards/Yamy3.jpg; sourceTree = "<group>"; };
 		1BCD5C9519F604E50023E87C /* HTMLHeadbandz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTMLHeadbandz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BCD5C9919F604E50023E87C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BCD5C9A19F604E50023E87C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -243,15 +225,6 @@
 				1B45CB6C1A05420B00AB133C /* Rashelle2.html */,
 				1B45CB6E1A05420B00AB133C /* Yamileth.html */,
 				1B45CB701A05420B00AB133C /* Yamileth2.html */,
-				1B45CB611A05420B00AB133C /* Beyonce.jpg */,
-				1B45CB691A05420B00AB133C /* my awesome fifth grade class!!!!.jpg */,
-				1B45CB6B1A05420B00AB133C /* Rashelle.jpg */,
-				1B45CB6D1A05420B00AB133C /* Rashelle2.jpg */,
-				1B45CB6F1A05420B00AB133C /* Yamileth.jpg */,
-				1B45CB711A05420B00AB133C /* Yamy2.jpg */,
-				1B45CB721A05420B00AB133C /* Yamy3.jpg */,
-				1B45CB601A05420B00AB133C /* bae.png */,
-				1B45CB631A05420B00AB133C /* ellie.png */,
 			);
 			name = cards;
 			sourceTree = "<group>";
@@ -399,35 +372,26 @@
 				1B3FBAF319F77461007ADED5 /* app_icon_76.png in Resources */,
 				1B45CB741A05420B00AB133C /* 2.html in Resources */,
 				1B3FBAF019F77461007ADED5 /* app_icon_40@3x.png in Resources */,
-				1B45CB8A1A05420B00AB133C /* Yamy2.jpg in Resources */,
 				1B3FBAF419F77461007ADED5 /* app_icon_76@2x.png in Resources */,
 				1B45CB771A05420B00AB133C /* 5.html in Resources */,
 				1B3FBAED19F77461007ADED5 /* app_icon_29@3x.png in Resources */,
 				1B45CB781A05420B00AB133C /* 6.html in Resources */,
 				1B45CB7D1A05420B00AB133C /* jnaiya1.html in Resources */,
-				1B45CB861A05420B00AB133C /* Rashelle2.jpg in Resources */,
 				1B45CB811A05420B00AB133C /* melo.html in Resources */,
 				1BCD5CA519F604E50023E87C /* LaunchScreen.xib in Resources */,
-				1B45CB8B1A05420B00AB133C /* Yamy3.jpg in Resources */,
 				1B45CB891A05420B00AB133C /* Yamileth2.html in Resources */,
 				1B3FBAEB19F77461007ADED5 /* app_icon_29.png in Resources */,
 				1B3FBAEE19F77461007ADED5 /* app_icon_40.png in Resources */,
 				1B45CB801A05420B00AB133C /* matthew2.html in Resources */,
-				1B45CB791A05420B00AB133C /* bae.png in Resources */,
 				1B45CB851A05420B00AB133C /* Rashelle2.html in Resources */,
-				1B45CB821A05420B00AB133C /* my awesome fifth grade class!!!!.jpg in Resources */,
 				1B45CB7F1A05420B00AB133C /* matthew1.html in Resources */,
 				1B45CB761A05420B00AB133C /* 4.html in Resources */,
 				1B45CB831A05420B00AB133C /* Rashelle.html in Resources */,
 				1B45CB751A05420B00AB133C /* 3.html in Resources */,
 				1B3FBAEF19F77461007ADED5 /* app_icon_40@2x.png in Resources */,
-				1B45CB841A05420B00AB133C /* Rashelle.jpg in Resources */,
 				1BCD5CA219F604E50023E87C /* Images.xcassets in Resources */,
 				1B45CB871A05420B00AB133C /* Yamileth.html in Resources */,
 				1B45CB7E1A05420B00AB133C /* jnaiya2.html in Resources */,
-				1B45CB7A1A05420B00AB133C /* Beyonce.jpg in Resources */,
-				1B45CB881A05420B00AB133C /* Yamileth.jpg in Resources */,
-				1B45CB7C1A05420B00AB133C /* ellie.png in Resources */,
 				1B3FBAF219F77461007ADED5 /* app_icon_60@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
